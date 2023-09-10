@@ -1,5 +1,4 @@
 #pragma once
-#include <list>
 #include <cassert>
 #include "MaxHeap.h"
 

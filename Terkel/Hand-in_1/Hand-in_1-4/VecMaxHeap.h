@@ -1,5 +1,5 @@
 #pragma once
-#include <vector>
+#include <cassert>
 #include "MaxHeap.h"
 
 class VecMaxHeap : public MaxHeap
@@ -17,6 +17,7 @@ public:
 	// delete and return the maximum element of the heap
 	int deleteMax();
 private:
-	std::vector<int> arr;
+	int *arr;
+	int arrSize;
 };
 

@@ -19,7 +19,23 @@ int main(void) {
 	cout << test.findMax() << endl;
 	cout << test.deleteMax() << endl << endl;
 
-	cout << test.findMax();
+	cout << test.findMax() << endl << endl << endl;
+
+	VecMaxHeap testVec;
+
+	cout << testVec.isEmpty() << endl;
+	cout << testVec.size() << endl << endl;
+
+	testVec.insert(11);
+	testVec.insert(33);
+	testVec.insert(22);
+
+	cout << testVec.isEmpty() << endl;
+	cout << testVec.size() << endl;
+	cout << testVec.findMax() << endl;
+	cout << testVec.deleteMax() << endl << endl;
+
+	cout << testVec.findMax() << endl << endl << endl;
 
 	return 0;
 }
