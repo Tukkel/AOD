@@ -1,0 +1,12 @@
+﻿  test_matrix.cpp
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\test_matrix.cpp(13,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(30,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(28,6): message : while compiling class template member function 'int Matrix<double>::numcols(void) const'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(52,4): message : see the first reference to 'Matrix<double>::numcols' in 'operator <<'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\test_matrix.cpp(31,32): message : see the first reference to 'operator <<' in 'main'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\test_matrix.cpp(12,17): message : see reference to class template instantiation 'Matrix<double>' being compiled
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(26,41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(26,6): message : while compiling class template member function 'int Matrix<double>::numrows(void) const'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\matrix_class.h(50,3): message : see the first reference to 'Matrix<double>::numrows' in 'operator <<'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-2\test_matrix.cpp(31,32): message : see the first reference to 'operator <<' in 'main'
+  Hand-in_2-2.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\x64\Debug\Hand-in_2-2.exe
