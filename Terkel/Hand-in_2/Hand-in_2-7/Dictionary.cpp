@@ -114,11 +114,6 @@ void Dictionary::rehash()
 	}
 	size_ = newSize;
 	dictionary_ = newDictionary;
-	for (size_t i = 0; i < size_; i++)
-	{
-		cout << dictionary_[i].first << " ";
-	}
-	cout << endl;
 }
 
 // Copy from https://www.geeksforgeeks.org/program-to-find-the-next-prime-number/
