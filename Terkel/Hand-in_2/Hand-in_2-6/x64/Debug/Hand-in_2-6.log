@@ -1,17 +1,17 @@
 ﻿  main.cpp
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(35,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(28,1): message : while compiling class template member function 'bool Set<int>::contains(T) const'
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(31,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(28,1): message : while compiling class template member function 'bool Set<int>::contains(T) const'
           with
           [
               T=int
           ]
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(14,41): message : see the first reference to 'Set<int>::contains' in 'main'
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(8,11): message : see reference to class template instantiation 'Set<int>' being compiled
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(53,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(45,1): message : while compiling class template member function 'bool Set<int>::remove(T)'
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(14,41): message : see the first reference to 'Set<int>::contains' in 'main'
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(8,11): message : see reference to class template instantiation 'Set<int>' being compiled
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(45,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\Set.cpp(41,1): message : while compiling class template member function 'bool Set<int>::remove(T)'
           with
           [
               T=int
           ]
-C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(20,41): message : see the first reference to 'Set<int>::remove' in 'main'
-  Hand-in_2-6.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_2\x64\Debug\Hand-in_2-6.exe
+C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\Hand-in_2-6\main.cpp(20,41): message : see the first reference to 'Set<int>::remove' in 'main'
+  Hand-in_2-6.vcxproj -> C:\Users\Terkel\Documents\GitHub\AOD\Terkel\Hand-in_2\x64\Debug\Hand-in_2-6.exe

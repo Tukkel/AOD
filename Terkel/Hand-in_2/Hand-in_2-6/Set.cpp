@@ -26,10 +26,6 @@ bool Set<T>::insert(T x)
 template<class T>
 bool Set<T>::contains(T x) const
 {
-	if (elements_ == 0)
-	{
-		return false;
-	}
 	for (size_t i = 0; i < elements_; i++)
 	{
 		if (x == set_->find_kth(i))
@@ -44,10 +40,6 @@ template<class T>
 bool Set<T>::remove(T x)
 {
 	size_t pos = elements_;
-	if (elements_ == 0)
-	{
-		return false;
-	}
 	for (size_t i = 0; i < elements_; i++)
 	{
 		if (x == set_->find_kth(i))

@@ -56,6 +56,10 @@ Stack<T>& Stack<T>::push(T x)
 template<class T>
 T Stack<T>::pop()
 {
+	if (position_ == 0)
+	{
+		return stack_[position_];
+	}
 	position_--;
 	return stack_[position_];
 }
