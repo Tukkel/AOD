@@ -23,6 +23,8 @@ class Matrix {
 
 		Matrix(vector<vector<Object>> v) : array{v} { }
 
+		//matrix_class.h
+
 		bool isElementStored(const Object object)
 		{
 			int numrows = this->numrows();
@@ -31,14 +33,19 @@ class Matrix {
 			{
 				return 0;
 			}
-			else if (numrows == numcols)
+			else if (numrows == numcols)	//check if matrix is N*N
 			{
-				for (int i = 0; i < numrows; i++)
+
+				for (int i = 0; i < numrows; i++)	//run through last element in every row
 				{
-					for (int j = 0; i < numcols; i++)
+					if (array[i][numrows-1] >= object) //if element is larger than object
 					{
-						if (array[i][j] == object)
-							return true;
+						for (int j = 0; j < numcols; j++) //run through every element in every column
+						{
+							if (array[i][j] == object)
+								return true;
+						}
+						return false;
 					}
 				}
 			}
