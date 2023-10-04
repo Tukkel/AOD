@@ -1,0 +1,7 @@
+﻿  test_sort.cpp
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-5\test_sort.cpp(52,17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-5\merge_sort.h(67,32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-5\test_sort.cpp(65,3): message : see reference to function template instantiation 'void mergeSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-5\quick_sort.h(61,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-5\test_sort.cpp(70,3): message : see reference to function template instantiation 'void quickSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+  Hand-in_3-5.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\x64\Debug\Hand-in_3-5.exe

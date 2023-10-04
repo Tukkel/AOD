@@ -1,0 +1,4 @@
+﻿  test.cpp
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-6\test.cpp(24,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-6\test.cpp(62,17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Hand-in_3-6.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\x64\Debug\Hand-in_3-6.exe

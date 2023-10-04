@@ -1,0 +1,5 @@
+﻿  test.cpp
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-7\test.cpp(34,17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-7\IntroSort.h(68,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\Hand-in_3-7\test.cpp(37,3): message : see reference to function template instantiation 'void introSort<int>(std::vector<int,std::allocator<int>> &)' being compiled
+  Hand-in_3-7.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_3\x64\Debug\Hand-in_3-7.exe
