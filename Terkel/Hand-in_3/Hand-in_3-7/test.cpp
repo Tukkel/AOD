@@ -1,7 +1,9 @@
 #include <iostream>
 #include <vector>
+#include <stdlib.h>
 #include "sort.h"
 #include <time.h>
+#include <algorithm>
 
 using namespace std;
 
@@ -23,9 +25,13 @@ void permute(vector<AnyType>& a) {
 }
 
 int main() {
-	const int NUM_ITEMS = 1000;
+	const int NUM_ITEMS = 100000;
 
 	vector<int>a(NUM_ITEMS);
+	vector<int>b(NUM_ITEMS);
+
+	clock_t start, stop;
+
 	for (int i = 1; i < a.size(); ++i) {
 		a[i] = a[i - 1] + 'a';
 	}
@@ -34,9 +40,22 @@ int main() {
 		srand(time(0) + theSeed);
 
 		permute(a);
-		introSort(a);
-		cout << "Intro sort: ";
-		checkSort(a);
+
+		b = a;
+		start = clock();
+		introSort(b);
+		cout << "Intro sort with seed " << theSeed << ": ";
+		checkSort(b);
+		stop = clock();
+		cout << "It took: " << ((double)(stop - start)/CLOCKS_PER_SEC) << " seconds." << endl;
+
+		b = a;
+		start = clock();
+		sort(b.begin(), b.end());
+		cout << "Stlsort with seed " << theSeed << ": ";
+		checkSort(b);
+		stop = clock();
+		cout << "It took: " << ((double)(stop - start) / CLOCKS_PER_SEC) << " seconds." << endl;
 	}
 
 	return 0;
