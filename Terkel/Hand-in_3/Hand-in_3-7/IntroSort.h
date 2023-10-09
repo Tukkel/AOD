@@ -42,6 +42,7 @@ int partition(vector<Comparable>& a, int left, int right) {
  */
 template <typename Comparable>
 void introSort(vector<Comparable>& a, int left, int right) {
+	assert(left <= right);
 	if (right - left > 15) {
 		int i = partition(a, left, right);
 		introSort(a, left, i - 1);	// Sort small elements
