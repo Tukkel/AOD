@@ -2,8 +2,6 @@
 
 void triangle(int m, int n, int start);
 
-
-
 int main()
 {
 	triangle(3, 8, 3);
