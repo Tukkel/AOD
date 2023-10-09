@@ -10,7 +10,7 @@ int main()
 
     std::vector<int> sorted = counting_sort(input);
 
-    for (const int& num : sorted) {
+    for (const int &num : sorted) {
         std::cout << num << " ";
     }
     std::cout << std::endl;
