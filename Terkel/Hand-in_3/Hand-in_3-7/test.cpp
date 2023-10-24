@@ -5,6 +5,7 @@
 #include <time.h>
 #include <algorithm>
 
+
 using namespace std;
 
 void checkSort(const vector<int>& a) {
@@ -16,7 +17,6 @@ void checkSort(const vector<int>& a) {
 	cout << "Finished checksort" << endl;
 }
 
-
 template <typename AnyType>
 void permute(vector<AnyType>& a) {
 	for (int j = 1; j < a.size(); ++j) {
@@ -25,7 +25,7 @@ void permute(vector<AnyType>& a) {
 }
 
 int main() {
-	const int NUM_ITEMS = 100000;
+	const int NUM_ITEMS = 1000000;
 
 	vector<int>a(NUM_ITEMS);
 	vector<int>b(NUM_ITEMS);
@@ -37,25 +37,25 @@ int main() {
 	}
 
 	for (int theSeed = 0; theSeed < 10; ++theSeed) {
-		srand(time(0) + theSeed);
+		srand(theSeed);
 
 		permute(a);
 
 		b = a;
 		start = clock();
 		introSort(b);
-		cout << "Intro sort with seed " << theSeed << ": ";
-		checkSort(b);
 		stop = clock();
-		cout << "It took: " << ((double)(stop - start)/CLOCKS_PER_SEC) << " seconds." << endl;
+		cout << "Sorting with intro sort with seed " << theSeed << " took: " << ((double)(stop - start) / CLOCKS_PER_SEC) << " seconds. ";
+		checkSort(b);
 
 		b = a;
 		start = clock();
 		sort(b.begin(), b.end());
-		cout << "Stlsort with seed " << theSeed << ": ";
-		checkSort(b);
 		stop = clock();
-		cout << "It took: " << ((double)(stop - start) / CLOCKS_PER_SEC) << " seconds." << endl;
+		cout << "Sorting with stlsort with seed " << theSeed << " took: " << ((double)(stop - start) / CLOCKS_PER_SEC) << " seconds. ";
+		checkSort(b);
+
+		cout << endl;
 	}
 
 	return 0;

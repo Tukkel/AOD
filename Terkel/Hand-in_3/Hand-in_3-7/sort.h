@@ -8,6 +8,7 @@
  */
 
 #include <vector>
+#include <cassert>
 using namespace std;
 
 #include "IntroSort.h"
