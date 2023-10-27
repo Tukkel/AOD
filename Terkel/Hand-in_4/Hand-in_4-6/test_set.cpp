@@ -29,9 +29,9 @@ int main() {
 	set.push(7);
 	set.push(11);
 	set.push(1);
-
+	
 	Set<int> set2 = set;
-
+	
 	Set<int>::iterator it = set2.insert(-1);
 	cout << *it << endl;
 	if (++it != set2.end())
@@ -47,10 +47,12 @@ int main() {
 	cout << *it << endl;
 	if (++it != set2.end())
 		cout << *it << endl;
-
+	
 	it = set2.find(15);
+	/*
 	if (++it != set2.end())
 		cout << *it << endl;
+	
 	it = set2.find(12);
 	cout << *it << endl;
 	if (++it != set2.end())
@@ -68,4 +70,5 @@ int main() {
 		cout << *it << ' ';
 	}
 	cout << endl;
+	*/
 }

@@ -10,14 +10,13 @@ private:
 	BinarySearchTree<Comparable> tree;
 
 public:
-	Set() { }
+	Set() {
+	}
 
 	~Set() { clear(); }
 
-	Set(const Set& s) {
-		//Set copy(s);
-		//std::swap(*this, copy);
-	}
+	Set(const Set& s) : theSize(s.theSize), tree(s.tree) 
+	{ }
 
 	void clear() {
 		tree.makeEmpty();

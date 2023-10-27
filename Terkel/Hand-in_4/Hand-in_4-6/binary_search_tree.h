@@ -142,7 +142,7 @@ private:
 		if (t == nullptr)
 			return nullptr;
 		else
-			return new BinaryNode{ t->element, clone(t->left), clone(t->right) };
+			return new BinaryNode{ t->element, clone(t->left), clone(t->right), t->parent};
 	}
 
 public:
