@@ -15,8 +15,8 @@ private:
 		BinaryNode* right;
 		BinaryNode* parent;
 		// TO BE IMPLEMENTED - ADD parent pointer and update methods to reflect
-		BinaryNode(const Comparable& theElement, BinaryNode* lt, BinaryNode* rt, BinaryNode* p) :
-			element{ theElement }, left{ lt }, right{ rt }, parent{ p } { }
+		BinaryNode(const Comparable& theElement, BinaryNode* lt, BinaryNode* rt, BinaryNode* pt) :
+			element{ theElement }, left{ lt }, right{ rt }, parent{ pt } { }
 	};
 
 	BinaryNode* root;
@@ -222,7 +222,7 @@ public:
 	bool contains(const Comparable& x) const; // look for item
 	void remove(const Comparable& x); // remove item
 	iterator insert(const Comparable& x); // insert item
-	iterator find(const Comparable& x); // insert item
+	iterator find(const Comparable& x); // find item
 	iterator erase(iterator& itr);
 };
 

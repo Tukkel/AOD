@@ -60,7 +60,7 @@ typename BinarySearchTree<Comparable>::iterator BinarySearchTree<Comparable>::fi
 template<typename Comparable>
 typename BinarySearchTree<Comparable>::iterator BinarySearchTree<Comparable>::erase(typename BinarySearchTree<Comparable>::iterator& itr) {
 	typename BinarySearchTree<Comparable>::iterator newIterator = itr;
-	newIterator++;
+	++newIterator;
 	remove(*itr, root);
 	itr = nullptr;
 	return newIterator;

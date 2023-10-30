@@ -35,6 +35,10 @@ public:
 		tree.insert(t);
 	}
 
+	void print() {
+		tree.printTree();
+	}
+
 	friend class BinarySearchTree<Comparable>;
 	typedef typename BinarySearchTree<Comparable>::iterator iterator;
 
@@ -43,7 +47,7 @@ public:
 	}
 
 	iterator end() const {
-		return nullptr;
+		return iterator(nullptr);
 	}
 
 	iterator insert(const Comparable& t) {

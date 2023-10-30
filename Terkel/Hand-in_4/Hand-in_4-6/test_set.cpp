@@ -45,12 +45,19 @@ int main() {
 
 	it = set2.insert(20);
 	cout << *it << endl;
+	it = set2.insert(14);
+	cout << *it << endl;
 	if (++it != set2.end())
 		cout << *it << endl;
+
+	for (Set<int>::iterator it = set2.begin(); it != set2.end(); it++) {
+		cout << *it << ' ';
+	}
+	cout << endl;
 	
 	it = set2.find(15);
-	/*
-	if (++it != set2.end())
+	
+	if (it != set2.end())
 		cout << *it << endl;
 	
 	it = set2.find(12);
@@ -58,17 +65,17 @@ int main() {
 	if (++it != set2.end())
 		cout << *it << endl;
 	it = set2.erase(it);
+	
 	if (it != set2.end())
 		cout << *it << endl;
-
+	
 	it = set2.find(4);
 	it = set2.erase(it);
 	if (it != set2.end())
 		cout << *it << endl;
-
+	
 	for (Set<int>::iterator it = set2.begin(); it != set2.end(); it++) {
 		cout << *it << ' ';
 	}
 	cout << endl;
-	*/
 }
