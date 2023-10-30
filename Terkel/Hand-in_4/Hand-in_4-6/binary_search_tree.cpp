@@ -48,8 +48,13 @@ const typename BinarySearchTree<Comparable>::iterator BinarySearchTree<Comparabl
 }
 
 template<typename Comparable>
+const typename BinarySearchTree<Comparable>::iterator BinarySearchTree<Comparable>::findMax() const {
+	return iterator(findMax(root));
+}
+
+template<typename Comparable>
 typename BinarySearchTree<Comparable>::iterator BinarySearchTree<Comparable>::insert(const Comparable& x) {
-	return iterator(insert(x, root));
+	return iterator(insert(x, root, nullptr));
 }
 
 template<typename Comparable>

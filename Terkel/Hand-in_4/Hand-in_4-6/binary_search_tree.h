@@ -27,7 +27,7 @@ private:
 	 * t is the node that roots the subtree.
 	 * Set the new root of the subtree.
 	 */
-	BinaryNode* insert(const Comparable& x, BinaryNode*& t, BinaryNode* parent = nullptr) {
+	BinaryNode* insert(const Comparable& x, BinaryNode*& t, BinaryNode* parent) {
 		if (t == nullptr) {
 			t = new BinaryNode{ x, nullptr, nullptr, parent };
 			return t;
@@ -138,18 +138,18 @@ private:
 	/**
 	 * Internal method to clone subtree.
 	 */
-	BinaryNode* clone(BinaryNode* t) const {
+	BinaryNode* clone(BinaryNode* t, BinaryNode* newP) const {
 		if (t == nullptr)
 			return nullptr;
 		else
-			return new BinaryNode{ t->element, clone(t->left), clone(t->right), t->parent};
+			return new BinaryNode{ t->element, clone(t->left , t), clone(t->right, t), newP};
 	}
 
 public:
 	BinarySearchTree() : root{ nullptr } {}
 
 	BinarySearchTree(const BinarySearchTree& rhs) : root{ nullptr } {
-		root = clone(rhs.root);
+		root = clone(rhs.root, nullptr);
 	}
 
 	~BinarySearchTree() { makeEmpty(); }
@@ -180,7 +180,11 @@ public:
 		}
 
 		iterator& operator ++() {
-			if (node->right != nullptr) {
+			if (node == nullptr)
+			{
+				return *this;
+			}
+			else if (node->right != nullptr) {
 				node = node->right;
 				while (node->left != nullptr) {
 					node = node->left;
@@ -216,6 +220,7 @@ public:
 	};
 
 	const iterator findMin() const;
+	const iterator findMax() const;
 	bool isEmpty() const; // test for emptiness
 	void printTree(ostream& out = cout) const;
 	void makeEmpty(); // empty tree
