@@ -32,7 +32,11 @@ public:
 	}
 
 	void push(const Comparable& t) {
-		tree.insert(t);
+		if (!tree.contains(t))
+		{
+			theSize++;
+			tree.insert(t);
+		}
 	}
 
 	void print() {
@@ -51,6 +55,10 @@ public:
 	}
 
 	iterator insert(const Comparable& t) {
+		if (!tree.contains(t))
+		{
+			theSize++;
+		}
 		return tree.insert(t);
 	}
 
@@ -59,6 +67,7 @@ public:
 	}
 
 	iterator erase(iterator& itr) {
+		theSize--;
 		return tree.erase(itr);
 	}
 };
