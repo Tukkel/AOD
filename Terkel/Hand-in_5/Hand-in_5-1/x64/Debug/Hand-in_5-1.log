@@ -1,4 +1,10 @@
-﻿  test_graph.cpp
+﻿  graph_class.cpp
 C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_5\Hand-in_5-1\graph_class.h(11,1): warning C4005: 'INFINITY': macro redefinition
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h(88,1): message : see previous definition of 'INFINITY'
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_5\Hand-in_5-1\graph_class.cpp(252,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_5\Hand-in_5-1\graph_class.cpp(289,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  test_graph.cpp
+C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_5\Hand-in_5-1\graph_class.h(11,1): warning C4005: 'INFINITY': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt\corecrt_math.h(88,1): message : see previous definition of 'INFINITY'
+  Generating Code...
   Hand-in_5-1.vcxproj -> C:\Users\terke\Documents\GitHub\AOD\Terkel\Hand-in_5\x64\Debug\Hand-in_5-1.exe

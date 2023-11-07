@@ -55,6 +55,8 @@ public:
 
 	vector<int> dijkstra_early(int s, int e, vector < int >& path, vector < int >& dist);
 
+	void dijkstra_top_first(int s, vector<int>& path, vector<int>& dist);
+
 	void BellmanFord(int s, vector<int>& path, vector<int>& dist);
 	/**
 	 * Compute all-shortest paths.

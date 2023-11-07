@@ -47,6 +47,13 @@ int main() {
 	for (int i = 0; i < 7; i++) {
 		cout << "Distance from 0 to " << i << " is " << dist[i] << endl;
 	}
+
+	cout << " Dijhkstra with no priority que topological sort first " << endl;
+	digraph.dijkstra_top_first(0, path, dist);
+	for (int i = 0; i < 7; i++) {
+		cout << "Distance from 0 to " << i << " is " << dist[i] << endl;
+	}
+
 	cout << digraph.connectedComponents() << " connected component(s)" << endl;
 
 	vector<int> early = digraph.dijkstra_early(0, 5, path, dist);

@@ -193,6 +193,30 @@ vector<int> Graph::dijkstra_early(int s, int e, vector < int >& path, vector < i
 	return returnpath;
 }
 
+void Graph::dijkstra_top_first(int s, vector < int >& path, vector < int >& dist) {
+	vector < bool >visited(adj.size());
+	stack < int >sorting;
+	int u;
+
+	for (int v = 0; v < adj.size(); ++v) {
+		dist[v] = INFINITY;
+		visited[v] = false;
+	}
+	dist[s] = 0;
+	dfs(s, visited, path, sorting);
+	while (sorting.empty() == false) {
+		u = sorting.top();
+		sorting.pop();
+		for (auto v : adj[u]) {
+			if (weight[u][v] && dist[u] != INT_MAX
+				&& dist[u] + weight[u][v] < dist[v]) {
+				dist[v] = dist[u] + weight[u][v];
+				path[v] = u;
+			}
+		}
+	}
+}
+
 void Graph::BellmanFord(int s, vector < int >& path, vector < int >& dist) {
 	for (int v = 0; v < adj.size(); ++v) {
 		dist[v] = INFINITY;
